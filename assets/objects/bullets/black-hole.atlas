@@ -1,0 +1,18 @@
+black-hole.png
+size: 2048, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+pma: false
+frame
+  index: 0
+  bounds: 0, 0, 512, 512
+frame
+  index: 1
+  bounds: 512, 0, 512, 512
+frame
+  index: 2
+  bounds: 1024, 0, 512, 512
+frame
+  index: 3
+  bounds: 1536, 0, 512, 512
