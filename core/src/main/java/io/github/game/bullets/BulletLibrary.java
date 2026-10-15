@@ -2,6 +2,7 @@ package io.github.game.bullets;
 
 import io.github.game.Player;
 import io.github.game.boss.Boss;
+import io.github.game.Constants;
 
 /**
  * <b>stores a bunch of configs for bullet behavior on here.</b>
@@ -71,7 +72,7 @@ public class BulletLibrary {
             .setDamage(1f)
             .setSpeed(15f)
             .setTarget(BulletTarget.PLAYER)
-            .setAcceleratorFactory(() -> Accelerator.towardPoint(player::getPos, 75f))
+            .setAcceleratorFactory(() -> Accelerator.towardPoint(player::getPos, Constants.BLACK_HOLE_ACC))
             .setPlayerAcceleratorFactory(() -> b -> Accelerator.towardPoint(b::getPos, 15f))
             .setDespawnTimer(30f);
 

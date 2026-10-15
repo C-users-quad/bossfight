@@ -5,7 +5,7 @@ import com.badlogic.gdx.math.Vector2;
 
 public class Constants {
   // how strongly black hole bullets accelerate the player toward itself
-  public static final float BLACK_HOLE_ACC = 10f;
+  public static final float BLACK_HOLE_ACC = 75f;
   // how long the black hole animation frames last for
   public static final float BH_ANIM_FRAMETIME = .1f;
   // maximum player speed in x

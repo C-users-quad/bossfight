@@ -235,8 +235,8 @@ public class Player implements Positionable {
             : Constants.PLAYER_VERT_SPEED; // normal fall
     vel.y = MathUtils.clamp(vel.y, -maxFallSpeed, Constants.PLAYER_VERT_SPEED);
 
-    // Friction on ground when not moving horizontally
-    if (grounded && dir.x == 0f) {
+    // Friction when not moving horizontally
+    if (dir.x == 0f) {
       vel.x *= (float) Math.pow(Constants.FRICTION, -dt);
     }
 
